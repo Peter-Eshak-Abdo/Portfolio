@@ -134,3 +134,22 @@ body#cover {
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
 }
+
+
+/*       Cover         */
+#cover {
+
+}
+h1#title {
+  letter-spacing: 12px;
+  word-spacing: 8px;
+  font-size: 8rem;
+
+}
+
+@media (max-width: 768px) {
+h1#title {
+  font-size: 4em;
+
+}
+}
