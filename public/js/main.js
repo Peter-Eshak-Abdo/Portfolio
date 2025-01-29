@@ -25,8 +25,8 @@ const projects = [
   {
     title: "Abona Faltaus",
     description: "Personal Project for Christian media without React or Next",
-    src: "https://github.com/Peter-Eshak-Abdo/Abona-Faltaos",
-    link: "https://abona-faltaos.web.app",
+    src: "https://github.com/Peter-Eshak-Abdo/abona-faltaus",
+    link: "https://abona-faltaus.web.app/",
   },
   {
     title: "udemy_shop",
@@ -76,14 +76,14 @@ const secProjects = document.getElementById("projects");
 for (let i = 0; i < projects.length; i++) {
   const project = document.createElement("div");
   project.classList.add("card");
-  project.classList.add("my-3");
-  project.style.width = "18rem";
+  project.classList.add("m-4");
+  project.style.width = "19rem";
 
   project.innerHTML = `
     <div class="card-body">
-      <h5 class="card-title">${projects[i].title}</h5>
-      <p class="card-text">${projects[i].description}</p>
-      <a href="${projects[i].src}" class="btn btn-outline-primary" target="_blank">Sourse Code</a>
+      <h5 class="card-title text-center fw-bold fs-3 pb-3">${projects[i].title}</h5>
+      <p class="card-text fs-5">${projects[i].description}</p>
+      <a href="${projects[i].src}" class="btn btn-outline-primary mx-lg-3 mx-sm-2" target="_blank">Sourse Code</a>
       <a href="${projects[i].link}" class="btn btn-outline-info" target="_blank">Website Link</a>
       </div>
       `;
@@ -167,17 +167,17 @@ const secProLang = document.getElementById("proLang");
 for (let i = 0; i < proLang.length; i++) {
   const proLanguage = document.createElement("div");
   proLanguage.classList.add("card");
-  proLanguage.classList.add("my-2");
+  proLanguage.classList.add("m-4");
   proLanguage.style.width = "18rem";
 
   proLanguage.innerHTML = `
     <div class="card-body">
-      <h5 class="card-title">${proLang[i].name}</h5>
-      <p class="card-text">${proLang[i].description}</p>
+      <h5 class="card-title text-center fw-bold fs-3 pb-3">${proLang[i].name}</h5>
+      <p class="card-text fs-5">${proLang[i].description}</p>
       <div class="progress-stacked">
         <div class="progress" role="progressbar" aria-label="Segment one Animated striped" aria-valuenow="${
           proLang[i].ability
-        }" aria-valuemin="0" aria-valuemax="100" style="width: ${proLang[i].ability}%">
+        }" aria-valuemin="0" aria-valuemax="100" style="width: ${proLang[i].ability}%;">
           <div class="progress-bar bg-success progress-bar-striped progress-bar-animated">${proLang[i].ability}%</div>
         </div>
         <div class="progress" role="progressbar" aria-label="Segment two Animated striped" aria-valuenow="${
