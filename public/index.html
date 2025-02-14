@@ -6,39 +6,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+    <meta name="author" content="Peter Eshak Abdo Gabra" />
     <meta name="generator" content="Hugo 0.122.0" />
     <title>Tofa7a-Portfolio</title>
-
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
+    <link rel="manifest" href="manifest.json" />
     <link href="css/style.css" rel="stylesheet" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", async () => {
+          try {
+            const registration = await navigator.serviceWorker.register("sw.js");
+            console.log("Service worker registered for scope", registration.scope);
+          } catch (err) {
+            console.error(err.name, err.message);
+          }
+        });
+      }
+    </script>
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
-
-    <div class="container d-flex justify-content-center flex-column align-content-center"id="cover">
-      <!-- <header class="mb-auto">
-        <div>
-          <h3 class="float-md-start mb-0">Cover</h3>
-           <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-            <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-          </nav>
-        </div>
-      </header> -->
-
+    <div class="container d-flex justify-content-center flex-column align-content-center" id="cover">
       <main class="w-100 h-100 d-flex justify-content-center flex-column">
-        <h1 class=" fw-bolder mb-5 justify-content-center align-content-center" id="title">Tofa7a Portfolio</h1>
+        <h1 class="fw-bolder mb-5 justify-content-center align-content-center" id="title">Tofa7a Portfolio</h1>
         <p class="lead align-content-end">
           <a href="pages/home.html" class="btn btn-lg btn-light fw-bolder border-white bg-white">Come in</a>
         </p>
       </main>
-
     </div>
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <favicon-badge src="icons/android-chrome-512x512.png" textColor="#fff" badge=""></favicon-badge>
   </body>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </html>
 

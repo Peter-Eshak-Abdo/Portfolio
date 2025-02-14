@@ -8,10 +8,22 @@
     <meta name="description" content="Portfolio" />
     <meta name="author" content="Peter Eshak Abdo" />
     <title>Tofa7a-Portfolio</title>
-
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
     <link href="../css/style.css" rel="stylesheet" />
+    <link rel="manifest" href="../manifest.json" />
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", async () => {
+          try {
+            const registration = await navigator.serviceWorker.register("sw.js");
+            console.log("Service worker registered for scope", registration.scope);
+          } catch (err) {
+            console.error(err.name, err.message);
+          }
+        });
+      }
+    </script>
   </head>
   <body>
     <header data-bs-theme="dark" class="mb-4">
@@ -70,7 +82,6 @@
         <h1 class="display-1 fw-bolder">Peter Eshak</h1>
         <p class="display-3 fw-medium">A web developer and Front-end developer.</p>
       </div>
-      <div class="float-end"></div>
     </div>
     <!-- Personal Data -->
     <hr class="container border border-primary border-5 opacity-50 mt-5 mb-5" id="personalDataSec" />
@@ -314,7 +325,9 @@
         <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
       </a>
     </div>
-
+    <br /><br /><br /><br /><br />
+    <a href="pwaBadge.html">PWA Badge</a>
+    <br /><br /><br /><br /><br />
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
@@ -343,7 +356,9 @@
         </ul>
       </footer>
     </div>
+    <favicon-badge src="../icons/android-chrome-512x512.png" textColor="#fff" badge=""></favicon-badge>
   </body>
   <script src="../js/bootstrap.bundle.min.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/pwaBadge.js"></script>
 </html>
